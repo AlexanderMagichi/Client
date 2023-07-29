@@ -1,29 +1,16 @@
 package ua.org.com.alex.clientcode;
 
+	import ua.org.com.alex.libs.shapebuilder.Shape;
 
-import Shapes;
+	public class TestCallLibs {
+	    public static void main(String[] args) {
+	        int size = 10;
 
+	        Shape.TriangleBuilder triangleBuilder = new Shape().new TriangleBuilder(size);
 
+	        triangleBuilder.buildTriangle();
+	        String triangle = triangleBuilder.getTriangle();
 
-public class TestCallLibs {
-
-	public static void main(String[] args) {
-
-
-		
-		
-		String getTriangle(int size);
-		
-		
-		
-		
-	
-		
-		
-		
-		String shape = shapeBuilder.getTriangle(10);
-		Sys.out.prn(shape);
-
+	        System.out.println(triangle);
+	    }
 	}
-
-}
